@@ -1,0 +1,2772 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a98c8179d8c175b3d29476acc6e53d8a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a98c8179d8c175b3d29476acc6e53d8a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a98c8179d8c175b3d29476acc6e53d8a = L.map(
+                "map_a98c8179d8c175b3d29476acc6e53d8a",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a9ea99353b7a1435f045861af9d2fdb2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a9ea99353b7a1435f045861af9d2fdb2.addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var marker_a01327caa8838e92efeda6532d5dac9b = L.marker(
+                [40.68236, -73.94314],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_188ba823692384d4f4c1820f3ff166aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a01327caa8838e92efeda6532d5dac9b.setIcon(icon_188ba823692384d4f4c1820f3ff166aa);
+        
+    
+        var popup_4e3a52ccf426b4e03861420c916231e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79f50deadc808ad78430e917ba9de9e1 = $(`<div id="html_79f50deadc808ad78430e917ba9de9e1" style="width: 100.0%; height: 100.0%;">neighbourhood_group           Brooklyn room_type              Entire home/apt Name: 262, dtype: object</div>`)[0];
+                popup_4e3a52ccf426b4e03861420c916231e1.setContent(html_79f50deadc808ad78430e917ba9de9e1);
+            
+        
+
+        marker_a01327caa8838e92efeda6532d5dac9b.bindPopup(popup_4e3a52ccf426b4e03861420c916231e1)
+        ;
+
+        
+    
+    
+            var marker_095018a5a01a5bb0eae774490ce28de3 = L.marker(
+                [40.66587, -73.97881],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_b4b3465de0079fd9a8927a63ddfa3ac7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_095018a5a01a5bb0eae774490ce28de3.setIcon(icon_b4b3465de0079fd9a8927a63ddfa3ac7);
+        
+    
+        var popup_7beecb2e82cf603c21a286c3cbf501c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54ee13a1bc7da15140cfc041ccebc516 = $(`<div id="html_54ee13a1bc7da15140cfc041ccebc516" style="width: 100.0%; height: 100.0%;">neighbourhood_group           Brooklyn room_type              Entire home/apt Name: 4220, dtype: object</div>`)[0];
+                popup_7beecb2e82cf603c21a286c3cbf501c9.setContent(html_54ee13a1bc7da15140cfc041ccebc516);
+            
+        
+
+        marker_095018a5a01a5bb0eae774490ce28de3.bindPopup(popup_7beecb2e82cf603c21a286c3cbf501c9)
+        ;
+
+        
+    
+    
+            var marker_4202f54d7e4e78a19ea039e3f9c12fed = L.marker(
+                [40.77425, -73.98122],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_c4e6cdeefae154ab5ae2ed6175a34c31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4202f54d7e4e78a19ea039e3f9c12fed.setIcon(icon_c4e6cdeefae154ab5ae2ed6175a34c31);
+        
+    
+        var popup_366deec507fa4b63e13a11104718f768 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f80e77062b637dcc5a5b9d6a6d62deec = $(`<div id="html_f80e77062b637dcc5a5b9d6a6d62deec" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 34714, dtype: object</div>`)[0];
+                popup_366deec507fa4b63e13a11104718f768.setContent(html_f80e77062b637dcc5a5b9d6a6d62deec);
+            
+        
+
+        marker_4202f54d7e4e78a19ea039e3f9c12fed.bindPopup(popup_366deec507fa4b63e13a11104718f768)
+        ;
+
+        
+    
+    
+            var marker_c91f39cdf08fe4937ebd10b9f252e6f9 = L.marker(
+                [40.72006, -73.99579],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_830da2f2cde73598fc3d21508e7d3ee4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_c91f39cdf08fe4937ebd10b9f252e6f9.setIcon(icon_830da2f2cde73598fc3d21508e7d3ee4);
+        
+    
+        var popup_e52017c7f10a1920ec62148c9576ba0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b8e588a7f24578014a5eb05c00e613f = $(`<div id="html_4b8e588a7f24578014a5eb05c00e613f" style="width: 100.0%; height: 100.0%;">neighbourhood_group       Manhattan room_type              Private room Name: 1261, dtype: object</div>`)[0];
+                popup_e52017c7f10a1920ec62148c9576ba0b.setContent(html_4b8e588a7f24578014a5eb05c00e613f);
+            
+        
+
+        marker_c91f39cdf08fe4937ebd10b9f252e6f9.bindPopup(popup_e52017c7f10a1920ec62148c9576ba0b)
+        ;
+
+        
+    
+    
+            var marker_dc65492f9598a194ad502c6b3fd82924 = L.marker(
+                [40.73325, -73.99971],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_661aefec024ef9325534d4200b01526c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dc65492f9598a194ad502c6b3fd82924.setIcon(icon_661aefec024ef9325534d4200b01526c);
+        
+    
+        var popup_67dba5c186b02c04ec777f91f52b36bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06a2c9a1b7e75655c980e3b2be826ed7 = $(`<div id="html_06a2c9a1b7e75655c980e3b2be826ed7" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 25572, dtype: object</div>`)[0];
+                popup_67dba5c186b02c04ec777f91f52b36bc.setContent(html_06a2c9a1b7e75655c980e3b2be826ed7);
+            
+        
+
+        marker_dc65492f9598a194ad502c6b3fd82924.bindPopup(popup_67dba5c186b02c04ec777f91f52b36bc)
+        ;
+
+        
+    
+    
+            var marker_bc703b0c03c0164fd37770cfa68be4fc = L.marker(
+                [40.85696, -73.91439],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_7838ef715f13a69bbc56bb7668cb50de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_bc703b0c03c0164fd37770cfa68be4fc.setIcon(icon_7838ef715f13a69bbc56bb7668cb50de);
+        
+    
+        var popup_f6f482641238090fbda78c50d78a03ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5b146d50bd847b0ccb64f5d6166a0e5 = $(`<div id="html_a5b146d50bd847b0ccb64f5d6166a0e5" style="width: 100.0%; height: 100.0%;">neighbourhood_group           Bronx room_type              Private room Name: 5543, dtype: object</div>`)[0];
+                popup_f6f482641238090fbda78c50d78a03ac.setContent(html_a5b146d50bd847b0ccb64f5d6166a0e5);
+            
+        
+
+        marker_bc703b0c03c0164fd37770cfa68be4fc.bindPopup(popup_f6f482641238090fbda78c50d78a03ac)
+        ;
+
+        
+    
+    
+            var marker_d0bb3d138a31d478e0c7c223665a89dd = L.marker(
+                [40.78165, -73.94825],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_4824a9f2f4142da178e8e70c5f5b66ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d0bb3d138a31d478e0c7c223665a89dd.setIcon(icon_4824a9f2f4142da178e8e70c5f5b66ab);
+        
+    
+        var popup_cb1af4ec3d804d8b451db6656993f27d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af6a97901a7b6f6c7daa09d807f14c09 = $(`<div id="html_af6a97901a7b6f6c7daa09d807f14c09" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 8714, dtype: object</div>`)[0];
+                popup_cb1af4ec3d804d8b451db6656993f27d.setContent(html_af6a97901a7b6f6c7daa09d807f14c09);
+            
+        
+
+        marker_d0bb3d138a31d478e0c7c223665a89dd.bindPopup(popup_cb1af4ec3d804d8b451db6656993f27d)
+        ;
+
+        
+    
+    
+            var marker_9785ccba4ed8e6fb25a718a45fd863f7 = L.marker(
+                [40.76264, -73.98569],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_df9ff3ec3880461e017ce1e9ed9e5df4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9785ccba4ed8e6fb25a718a45fd863f7.setIcon(icon_df9ff3ec3880461e017ce1e9ed9e5df4);
+        
+    
+        var popup_c6a742c90e932d3ee4ec61a425bf45f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bf3472dff52ccc0f30a420c7ff1dd9b = $(`<div id="html_5bf3472dff52ccc0f30a420c7ff1dd9b" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 16488, dtype: object</div>`)[0];
+                popup_c6a742c90e932d3ee4ec61a425bf45f6.setContent(html_5bf3472dff52ccc0f30a420c7ff1dd9b);
+            
+        
+
+        marker_9785ccba4ed8e6fb25a718a45fd863f7.bindPopup(popup_c6a742c90e932d3ee4ec61a425bf45f6)
+        ;
+
+        
+    
+    
+            var marker_fa1b15934fc4123605337c3f81e02be1 = L.marker(
+                [40.71867, -73.99082],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_0ca78160da40ee0622c4441639330611 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fa1b15934fc4123605337c3f81e02be1.setIcon(icon_0ca78160da40ee0622c4441639330611);
+        
+    
+        var popup_ec899f7f28c12a383532f9b91315c11b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6eca5d0fd3a4a74d5ab4e2ce8b3f6e47 = $(`<div id="html_6eca5d0fd3a4a74d5ab4e2ce8b3f6e47" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 42164, dtype: object</div>`)[0];
+                popup_ec899f7f28c12a383532f9b91315c11b.setContent(html_6eca5d0fd3a4a74d5ab4e2ce8b3f6e47);
+            
+        
+
+        marker_fa1b15934fc4123605337c3f81e02be1.bindPopup(popup_ec899f7f28c12a383532f9b91315c11b)
+        ;
+
+        
+    
+    
+            var marker_ae5da50cbc4fa8f4d1333257b9219794 = L.marker(
+                [40.79951, -73.96767],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_3a437f10a3adaf153ef57aee606fc81a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_ae5da50cbc4fa8f4d1333257b9219794.setIcon(icon_3a437f10a3adaf153ef57aee606fc81a);
+        
+    
+        var popup_09c0403313e8ef2d6391ef1925419b89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e81fe52669a4d6922c01556e85bdbe90 = $(`<div id="html_e81fe52669a4d6922c01556e85bdbe90" style="width: 100.0%; height: 100.0%;">neighbourhood_group       Manhattan room_type              Private room Name: 16654, dtype: object</div>`)[0];
+                popup_09c0403313e8ef2d6391ef1925419b89.setContent(html_e81fe52669a4d6922c01556e85bdbe90);
+            
+        
+
+        marker_ae5da50cbc4fa8f4d1333257b9219794.bindPopup(popup_09c0403313e8ef2d6391ef1925419b89)
+        ;
+
+        
+    
+    
+            var marker_6767602cfea861446a0a18991dc3f735 = L.marker(
+                [40.69333, -73.965],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_f4c4549cffc2ea8ce4e18adadb4bebf2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_6767602cfea861446a0a18991dc3f735.setIcon(icon_f4c4549cffc2ea8ce4e18adadb4bebf2);
+        
+    
+        var popup_9edc3fe3cde275623ea05e21ab638972 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08a84835905bc7c55f73a5892b8c3775 = $(`<div id="html_08a84835905bc7c55f73a5892b8c3775" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 47505, dtype: object</div>`)[0];
+                popup_9edc3fe3cde275623ea05e21ab638972.setContent(html_08a84835905bc7c55f73a5892b8c3775);
+            
+        
+
+        marker_6767602cfea861446a0a18991dc3f735.bindPopup(popup_9edc3fe3cde275623ea05e21ab638972)
+        ;
+
+        
+    
+    
+            var marker_d99fb1d8fbc16cbe51966efbeb843d72 = L.marker(
+                [40.69488, -73.93115],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_be0c63c1e553f88091230797b9b72861 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_d99fb1d8fbc16cbe51966efbeb843d72.setIcon(icon_be0c63c1e553f88091230797b9b72861);
+        
+    
+        var popup_e7772040e63744ec8b6ca548ed50ccca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c98c16af5644c56e44f9c387a5979f4 = $(`<div id="html_7c98c16af5644c56e44f9c387a5979f4" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 39964, dtype: object</div>`)[0];
+                popup_e7772040e63744ec8b6ca548ed50ccca.setContent(html_7c98c16af5644c56e44f9c387a5979f4);
+            
+        
+
+        marker_d99fb1d8fbc16cbe51966efbeb843d72.bindPopup(popup_e7772040e63744ec8b6ca548ed50ccca)
+        ;
+
+        
+    
+    
+            var marker_b4ff13b2a8f6a649dfcc565a7493250a = L.marker(
+                [40.76553, -73.98709],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_05c978cb92b78a42b28fba941fd3373f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b4ff13b2a8f6a649dfcc565a7493250a.setIcon(icon_05c978cb92b78a42b28fba941fd3373f);
+        
+    
+        var popup_d6cce34678e39c185802442c0a3bb2e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aeab197735d986a5fe12d2d79514afa1 = $(`<div id="html_aeab197735d986a5fe12d2d79514afa1" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 12714, dtype: object</div>`)[0];
+                popup_d6cce34678e39c185802442c0a3bb2e4.setContent(html_aeab197735d986a5fe12d2d79514afa1);
+            
+        
+
+        marker_b4ff13b2a8f6a649dfcc565a7493250a.bindPopup(popup_d6cce34678e39c185802442c0a3bb2e4)
+        ;
+
+        
+    
+    
+            var marker_5b42bdce03291089f8a1e4a271df283b = L.marker(
+                [40.71721, -73.99312],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_1818a6fb3908c41f30e2556d31c3e4c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5b42bdce03291089f8a1e4a271df283b.setIcon(icon_1818a6fb3908c41f30e2556d31c3e4c4);
+        
+    
+        var popup_10e53616b3bec181f5cd8ca14679a502 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76c217f324154e85ee19352101313333 = $(`<div id="html_76c217f324154e85ee19352101313333" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 32360, dtype: object</div>`)[0];
+                popup_10e53616b3bec181f5cd8ca14679a502.setContent(html_76c217f324154e85ee19352101313333);
+            
+        
+
+        marker_5b42bdce03291089f8a1e4a271df283b.bindPopup(popup_10e53616b3bec181f5cd8ca14679a502)
+        ;
+
+        
+    
+    
+            var marker_81622437bbd06152e0d85e314ae4dc3f = L.marker(
+                [40.76184, -73.99334],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_f85fdd8f8c8c3acfaa43a79b6e69199a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_81622437bbd06152e0d85e314ae4dc3f.setIcon(icon_f85fdd8f8c8c3acfaa43a79b6e69199a);
+        
+    
+        var popup_51b1f727c608d31813d303b660f3c40c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab13e857248f0896bc5f1088e619dee0 = $(`<div id="html_ab13e857248f0896bc5f1088e619dee0" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 1259, dtype: object</div>`)[0];
+                popup_51b1f727c608d31813d303b660f3c40c.setContent(html_ab13e857248f0896bc5f1088e619dee0);
+            
+        
+
+        marker_81622437bbd06152e0d85e314ae4dc3f.bindPopup(popup_51b1f727c608d31813d303b660f3c40c)
+        ;
+
+        
+    
+    
+            var marker_ed1c5688d9c6b4e687cd992dc7cbc03c = L.marker(
+                [40.68627, -73.93131],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_f33d640b851c485777355759165cede5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_ed1c5688d9c6b4e687cd992dc7cbc03c.setIcon(icon_f33d640b851c485777355759165cede5);
+        
+    
+        var popup_726e145af567283ec7c1e84624d1f427 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_545d8196fe474cc49bb317dbc361e9f5 = $(`<div id="html_545d8196fe474cc49bb317dbc361e9f5" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 5671, dtype: object</div>`)[0];
+                popup_726e145af567283ec7c1e84624d1f427.setContent(html_545d8196fe474cc49bb317dbc361e9f5);
+            
+        
+
+        marker_ed1c5688d9c6b4e687cd992dc7cbc03c.bindPopup(popup_726e145af567283ec7c1e84624d1f427)
+        ;
+
+        
+    
+    
+            var marker_69fa8ea36caeaf32860e508268bbba45 = L.marker(
+                [40.80542, -73.9623],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_7e371a5ecc83f58511f90e1d0cffa7c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_69fa8ea36caeaf32860e508268bbba45.setIcon(icon_7e371a5ecc83f58511f90e1d0cffa7c4);
+        
+    
+        var popup_7a5745021456b5d4729406b47bb3e13c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec110ec88b89aa9b008472566f869b0c = $(`<div id="html_ec110ec88b89aa9b008472566f869b0c" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 12347, dtype: object</div>`)[0];
+                popup_7a5745021456b5d4729406b47bb3e13c.setContent(html_ec110ec88b89aa9b008472566f869b0c);
+            
+        
+
+        marker_69fa8ea36caeaf32860e508268bbba45.bindPopup(popup_7a5745021456b5d4729406b47bb3e13c)
+        ;
+
+        
+    
+    
+            var marker_22e0378977f5e90bf247bf7432cd1c0d = L.marker(
+                [40.79505, -73.94361],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_8458441bbd7c848b235180fcdef9872c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_22e0378977f5e90bf247bf7432cd1c0d.setIcon(icon_8458441bbd7c848b235180fcdef9872c);
+        
+    
+        var popup_befd64dce6130eb3d1b005d091f3dac8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95f2f0d1e50bbee939631c753ef4efa6 = $(`<div id="html_95f2f0d1e50bbee939631c753ef4efa6" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 15429, dtype: object</div>`)[0];
+                popup_befd64dce6130eb3d1b005d091f3dac8.setContent(html_95f2f0d1e50bbee939631c753ef4efa6);
+            
+        
+
+        marker_22e0378977f5e90bf247bf7432cd1c0d.bindPopup(popup_befd64dce6130eb3d1b005d091f3dac8)
+        ;
+
+        
+    
+    
+            var marker_c85644dc4da3ad595eb0e81d6cf442ed = L.marker(
+                [40.71578, -73.98201],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_018fc05def57dc6373bfa3af5db7ca5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_c85644dc4da3ad595eb0e81d6cf442ed.setIcon(icon_018fc05def57dc6373bfa3af5db7ca5d);
+        
+    
+        var popup_934d9e09cb9b4d51621041c108ba3b70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a604f415e56d0b64c5b47e571ca3601 = $(`<div id="html_2a604f415e56d0b64c5b47e571ca3601" style="width: 100.0%; height: 100.0%;">neighbourhood_group       Manhattan room_type              Private room Name: 13834, dtype: object</div>`)[0];
+                popup_934d9e09cb9b4d51621041c108ba3b70.setContent(html_2a604f415e56d0b64c5b47e571ca3601);
+            
+        
+
+        marker_c85644dc4da3ad595eb0e81d6cf442ed.bindPopup(popup_934d9e09cb9b4d51621041c108ba3b70)
+        ;
+
+        
+    
+    
+            var marker_fba14de535fdaf013217f2fdb7233ab9 = L.marker(
+                [40.72684, -73.95628],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_ecad9e5f326517d1d10988b275230fd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_fba14de535fdaf013217f2fdb7233ab9.setIcon(icon_ecad9e5f326517d1d10988b275230fd0);
+        
+    
+        var popup_5d55b841444648e45a26048c687712cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8480cb4ab9e113ff2a10cc1d4f7e8c97 = $(`<div id="html_8480cb4ab9e113ff2a10cc1d4f7e8c97" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 7761, dtype: object</div>`)[0];
+                popup_5d55b841444648e45a26048c687712cd.setContent(html_8480cb4ab9e113ff2a10cc1d4f7e8c97);
+            
+        
+
+        marker_fba14de535fdaf013217f2fdb7233ab9.bindPopup(popup_5d55b841444648e45a26048c687712cd)
+        ;
+
+        
+    
+    
+            var marker_4017cf05138861ed958941afe09266ff = L.marker(
+                [40.80453, -73.95699],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_b25af565e8ce4aeb10f47e487af5f5a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_4017cf05138861ed958941afe09266ff.setIcon(icon_b25af565e8ce4aeb10f47e487af5f5a9);
+        
+    
+        var popup_61a3b9e4db220e1863f1f6a702ceed81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24f09e35438847a4e8e5d3507c2460df = $(`<div id="html_24f09e35438847a4e8e5d3507c2460df" style="width: 100.0%; height: 100.0%;">neighbourhood_group       Manhattan room_type              Private room Name: 4433, dtype: object</div>`)[0];
+                popup_61a3b9e4db220e1863f1f6a702ceed81.setContent(html_24f09e35438847a4e8e5d3507c2460df);
+            
+        
+
+        marker_4017cf05138861ed958941afe09266ff.bindPopup(popup_61a3b9e4db220e1863f1f6a702ceed81)
+        ;
+
+        
+    
+    
+            var marker_c414fc77bb694bdfc321784788787fdf = L.marker(
+                [40.68215, -73.97372],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_963fbd8112ea56b31951e96b456c60e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_c414fc77bb694bdfc321784788787fdf.setIcon(icon_963fbd8112ea56b31951e96b456c60e7);
+        
+    
+        var popup_76097769f8415a624b8e32e2f4f3d0e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7a005d62a955b6ceb3b77ef8983f00d = $(`<div id="html_b7a005d62a955b6ceb3b77ef8983f00d" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 30151, dtype: object</div>`)[0];
+                popup_76097769f8415a624b8e32e2f4f3d0e2.setContent(html_b7a005d62a955b6ceb3b77ef8983f00d);
+            
+        
+
+        marker_c414fc77bb694bdfc321784788787fdf.bindPopup(popup_76097769f8415a624b8e32e2f4f3d0e2)
+        ;
+
+        
+    
+    
+            var marker_5339827d75048664873cb079eb8808be = L.marker(
+                [40.60456, -74.00117],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_3240e30f4bab617677b3898ee85a85bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_5339827d75048664873cb079eb8808be.setIcon(icon_3240e30f4bab617677b3898ee85a85bc);
+        
+    
+        var popup_0a72de99ff7c4ff93fdd4babd20af3c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6631b5d0d8558de2803d72c664cd723d = $(`<div id="html_6631b5d0d8558de2803d72c664cd723d" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 43958, dtype: object</div>`)[0];
+                popup_0a72de99ff7c4ff93fdd4babd20af3c4.setContent(html_6631b5d0d8558de2803d72c664cd723d);
+            
+        
+
+        marker_5339827d75048664873cb079eb8808be.bindPopup(popup_0a72de99ff7c4ff93fdd4babd20af3c4)
+        ;
+
+        
+    
+    
+            var marker_2bb9d3eab01ffac329dc5fa14da57bcf = L.marker(
+                [40.88808, -73.86017],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_b654dd025cc3ce5030288ecfb32c4b57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2bb9d3eab01ffac329dc5fa14da57bcf.setIcon(icon_b654dd025cc3ce5030288ecfb32c4b57);
+        
+    
+        var popup_3e8542ff160b8c3f6dd269d1d3aaeff8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce0c2ef807d0c2cc227452919eb44086 = $(`<div id="html_ce0c2ef807d0c2cc227452919eb44086" style="width: 100.0%; height: 100.0%;">neighbourhood_group              Bronx room_type              Entire home/apt Name: 13854, dtype: object</div>`)[0];
+                popup_3e8542ff160b8c3f6dd269d1d3aaeff8.setContent(html_ce0c2ef807d0c2cc227452919eb44086);
+            
+        
+
+        marker_2bb9d3eab01ffac329dc5fa14da57bcf.bindPopup(popup_3e8542ff160b8c3f6dd269d1d3aaeff8)
+        ;
+
+        
+    
+    
+            var marker_9b07cb2241172d6a99f82a0abdbdca2c = L.marker(
+                [40.71786, -73.95588],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_df595a6441fd1069693304d747337845 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9b07cb2241172d6a99f82a0abdbdca2c.setIcon(icon_df595a6441fd1069693304d747337845);
+        
+    
+        var popup_ab3feffbc3fba80d99cd45d9dd54cd68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e416d79753d0c93071b5ba796648bcfe = $(`<div id="html_e416d79753d0c93071b5ba796648bcfe" style="width: 100.0%; height: 100.0%;">neighbourhood_group           Brooklyn room_type              Entire home/apt Name: 11975, dtype: object</div>`)[0];
+                popup_ab3feffbc3fba80d99cd45d9dd54cd68.setContent(html_e416d79753d0c93071b5ba796648bcfe);
+            
+        
+
+        marker_9b07cb2241172d6a99f82a0abdbdca2c.bindPopup(popup_ab3feffbc3fba80d99cd45d9dd54cd68)
+        ;
+
+        
+    
+    
+            var marker_80d01b3586a3537a46454d4572729dd6 = L.marker(
+                [40.7616, -73.99042],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_936a8e59e5601ed2b98e8bb94f02feba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_80d01b3586a3537a46454d4572729dd6.setIcon(icon_936a8e59e5601ed2b98e8bb94f02feba);
+        
+    
+        var popup_247f7aec1eb235ff209756bcc5eaf447 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64766180926aeb9899afb862b708ec30 = $(`<div id="html_64766180926aeb9899afb862b708ec30" style="width: 100.0%; height: 100.0%;">neighbourhood_group       Manhattan room_type              Private room Name: 41910, dtype: object</div>`)[0];
+                popup_247f7aec1eb235ff209756bcc5eaf447.setContent(html_64766180926aeb9899afb862b708ec30);
+            
+        
+
+        marker_80d01b3586a3537a46454d4572729dd6.bindPopup(popup_247f7aec1eb235ff209756bcc5eaf447)
+        ;
+
+        
+    
+    
+            var marker_b12e0f0b996d8f8be811e98c178a1f59 = L.marker(
+                [40.6451, -73.97064],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_0067d219b905ff3ed540c20050fb685e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_b12e0f0b996d8f8be811e98c178a1f59.setIcon(icon_0067d219b905ff3ed540c20050fb685e);
+        
+    
+        var popup_85c58d26d6f1de087c1e6c7c69abf889 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d5737ab1e356edc45f2fe15561ca013 = $(`<div id="html_6d5737ab1e356edc45f2fe15561ca013" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 33795, dtype: object</div>`)[0];
+                popup_85c58d26d6f1de087c1e6c7c69abf889.setContent(html_6d5737ab1e356edc45f2fe15561ca013);
+            
+        
+
+        marker_b12e0f0b996d8f8be811e98c178a1f59.bindPopup(popup_85c58d26d6f1de087c1e6c7c69abf889)
+        ;
+
+        
+    
+    
+            var marker_11e533f0a83ea5207431f12c6175677e = L.marker(
+                [40.64898, -73.95502],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_625a70fadc3ae2dcd7dba115f73c88fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_11e533f0a83ea5207431f12c6175677e.setIcon(icon_625a70fadc3ae2dcd7dba115f73c88fa);
+        
+    
+        var popup_0b5d8e66a61bcd61f8f8d73235b5e1d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09a074d30398112b49e7f46e8951ffbb = $(`<div id="html_09a074d30398112b49e7f46e8951ffbb" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 47195, dtype: object</div>`)[0];
+                popup_0b5d8e66a61bcd61f8f8d73235b5e1d2.setContent(html_09a074d30398112b49e7f46e8951ffbb);
+            
+        
+
+        marker_11e533f0a83ea5207431f12c6175677e.bindPopup(popup_0b5d8e66a61bcd61f8f8d73235b5e1d2)
+        ;
+
+        
+    
+    
+            var marker_5225c21de348297d92cd80c4761a0183 = L.marker(
+                [40.74323, -73.90471],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_60e54317c2d59877de1b37af0812556c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_5225c21de348297d92cd80c4761a0183.setIcon(icon_60e54317c2d59877de1b37af0812556c);
+        
+    
+        var popup_861c68e3592c8e389b29463941119270 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff3a211abc85f0c04a303cc787b9115e = $(`<div id="html_ff3a211abc85f0c04a303cc787b9115e" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Queens room_type              Private room Name: 33857, dtype: object</div>`)[0];
+                popup_861c68e3592c8e389b29463941119270.setContent(html_ff3a211abc85f0c04a303cc787b9115e);
+            
+        
+
+        marker_5225c21de348297d92cd80c4761a0183.bindPopup(popup_861c68e3592c8e389b29463941119270)
+        ;
+
+        
+    
+    
+            var marker_ca6c29baba96bdc66353da087f655b8e = L.marker(
+                [40.71208, -73.95091],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_0d4962bcabd555b15229ae8b3ba32b0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ca6c29baba96bdc66353da087f655b8e.setIcon(icon_0d4962bcabd555b15229ae8b3ba32b0b);
+        
+    
+        var popup_d1080bf30f39994415ee4c5f4a2ed37a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0448f3659d17cd0be096a2fc735b6c2b = $(`<div id="html_0448f3659d17cd0be096a2fc735b6c2b" style="width: 100.0%; height: 100.0%;">neighbourhood_group           Brooklyn room_type              Entire home/apt Name: 7331, dtype: object</div>`)[0];
+                popup_d1080bf30f39994415ee4c5f4a2ed37a.setContent(html_0448f3659d17cd0be096a2fc735b6c2b);
+            
+        
+
+        marker_ca6c29baba96bdc66353da087f655b8e.bindPopup(popup_d1080bf30f39994415ee4c5f4a2ed37a)
+        ;
+
+        
+    
+    
+            var marker_80a63ba6bd3fcde3af0712e267add0de = L.marker(
+                [40.70881, -73.9468],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_6a20ab39f0d1cb827afa9db0aceda71c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_80a63ba6bd3fcde3af0712e267add0de.setIcon(icon_6a20ab39f0d1cb827afa9db0aceda71c);
+        
+    
+        var popup_3faeb98dec51d05a371f6ffaa878f4f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a7169ba211deab719e19e5f52a9f97a = $(`<div id="html_0a7169ba211deab719e19e5f52a9f97a" style="width: 100.0%; height: 100.0%;">neighbourhood_group           Brooklyn room_type              Entire home/apt Name: 21353, dtype: object</div>`)[0];
+                popup_3faeb98dec51d05a371f6ffaa878f4f1.setContent(html_0a7169ba211deab719e19e5f52a9f97a);
+            
+        
+
+        marker_80a63ba6bd3fcde3af0712e267add0de.bindPopup(popup_3faeb98dec51d05a371f6ffaa878f4f1)
+        ;
+
+        
+    
+    
+            var marker_35352a4e938f7a0a6a5af59107e47897 = L.marker(
+                [40.75388, -73.96727],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_fe78c581182f6bdad8227d2cb44a8551 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_35352a4e938f7a0a6a5af59107e47897.setIcon(icon_fe78c581182f6bdad8227d2cb44a8551);
+        
+    
+        var popup_b5527f9521633bc1bb67eec00e383a4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_102b7201c10bd7ecb86c17cafb8110ea = $(`<div id="html_102b7201c10bd7ecb86c17cafb8110ea" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 29330, dtype: object</div>`)[0];
+                popup_b5527f9521633bc1bb67eec00e383a4e.setContent(html_102b7201c10bd7ecb86c17cafb8110ea);
+            
+        
+
+        marker_35352a4e938f7a0a6a5af59107e47897.bindPopup(popup_b5527f9521633bc1bb67eec00e383a4e)
+        ;
+
+        
+    
+    
+            var marker_b063154fd3dbe2986bc54438862ab3f4 = L.marker(
+                [40.76391, -73.95938],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_f70795cdb5fd2f0b151d1eddb63e4d4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b063154fd3dbe2986bc54438862ab3f4.setIcon(icon_f70795cdb5fd2f0b151d1eddb63e4d4f);
+        
+    
+        var popup_80fa81b1739947590f78ab34737e23d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6cb164a2b1229ad9ce7ce3823e156870 = $(`<div id="html_6cb164a2b1229ad9ce7ce3823e156870" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 10643, dtype: object</div>`)[0];
+                popup_80fa81b1739947590f78ab34737e23d2.setContent(html_6cb164a2b1229ad9ce7ce3823e156870);
+            
+        
+
+        marker_b063154fd3dbe2986bc54438862ab3f4.bindPopup(popup_80fa81b1739947590f78ab34737e23d2)
+        ;
+
+        
+    
+    
+            var marker_3962994d49e15ba6396df1b5c8615fbb = L.marker(
+                [40.7293, -73.9834],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_765dfc5b1ac96d8bc5573283c3571bd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3962994d49e15ba6396df1b5c8615fbb.setIcon(icon_765dfc5b1ac96d8bc5573283c3571bd8);
+        
+    
+        var popup_828b328e6ac4892192c0bb7a31486766 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92e50e5ebdaf98fb058286aa355703a4 = $(`<div id="html_92e50e5ebdaf98fb058286aa355703a4" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 36834, dtype: object</div>`)[0];
+                popup_828b328e6ac4892192c0bb7a31486766.setContent(html_92e50e5ebdaf98fb058286aa355703a4);
+            
+        
+
+        marker_3962994d49e15ba6396df1b5c8615fbb.bindPopup(popup_828b328e6ac4892192c0bb7a31486766)
+        ;
+
+        
+    
+    
+            var marker_6207e1186046eb58a31a3acba655628e = L.marker(
+                [40.70766, -73.94789],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_d2d02f62c1e1fc938f82835510a1a5e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_6207e1186046eb58a31a3acba655628e.setIcon(icon_d2d02f62c1e1fc938f82835510a1a5e9);
+        
+    
+        var popup_8b3883ec8abe9b8647c597ecfc278035 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d45ca4addb5fd935f7765e40c8558ad = $(`<div id="html_5d45ca4addb5fd935f7765e40c8558ad" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 39526, dtype: object</div>`)[0];
+                popup_8b3883ec8abe9b8647c597ecfc278035.setContent(html_5d45ca4addb5fd935f7765e40c8558ad);
+            
+        
+
+        marker_6207e1186046eb58a31a3acba655628e.bindPopup(popup_8b3883ec8abe9b8647c597ecfc278035)
+        ;
+
+        
+    
+    
+            var marker_b8413af0a42f83851f5855b13f94b786 = L.marker(
+                [40.7208, -73.9867],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_8e7b0acbbf05f967d19238eb47cd9f6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b8413af0a42f83851f5855b13f94b786.setIcon(icon_8e7b0acbbf05f967d19238eb47cd9f6f);
+        
+    
+        var popup_39d44a9fd61846e34632fa7f960d9380 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28d80be2494f15897b4cb2ef8b02ab04 = $(`<div id="html_28d80be2494f15897b4cb2ef8b02ab04" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 7911, dtype: object</div>`)[0];
+                popup_39d44a9fd61846e34632fa7f960d9380.setContent(html_28d80be2494f15897b4cb2ef8b02ab04);
+            
+        
+
+        marker_b8413af0a42f83851f5855b13f94b786.bindPopup(popup_39d44a9fd61846e34632fa7f960d9380)
+        ;
+
+        
+    
+    
+            var marker_84e20181e04f0f3547f9b4ff907f0a3f = L.marker(
+                [40.64934, -73.94508],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_5dd5a4a98c0eec11b86c2fa924af9196 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_84e20181e04f0f3547f9b4ff907f0a3f.setIcon(icon_5dd5a4a98c0eec11b86c2fa924af9196);
+        
+    
+        var popup_c15376b0f4626d680b8d7522f40527a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_450e4f9e5ffede1b31209e827bd5773a = $(`<div id="html_450e4f9e5ffede1b31209e827bd5773a" style="width: 100.0%; height: 100.0%;">neighbourhood_group           Brooklyn room_type              Entire home/apt Name: 31316, dtype: object</div>`)[0];
+                popup_c15376b0f4626d680b8d7522f40527a2.setContent(html_450e4f9e5ffede1b31209e827bd5773a);
+            
+        
+
+        marker_84e20181e04f0f3547f9b4ff907f0a3f.bindPopup(popup_c15376b0f4626d680b8d7522f40527a2)
+        ;
+
+        
+    
+    
+            var marker_bd51163dd286afcce5491117c3e48fe8 = L.marker(
+                [40.67453, -73.94537],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_2d177e992e867c33d3cd13819662fbbc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_bd51163dd286afcce5491117c3e48fe8.setIcon(icon_2d177e992e867c33d3cd13819662fbbc);
+        
+    
+        var popup_491a589825e0ef8939ed5381707f3778 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b001ab689fe1af94ebb33a7d1556f6f = $(`<div id="html_1b001ab689fe1af94ebb33a7d1556f6f" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 19431, dtype: object</div>`)[0];
+                popup_491a589825e0ef8939ed5381707f3778.setContent(html_1b001ab689fe1af94ebb33a7d1556f6f);
+            
+        
+
+        marker_bd51163dd286afcce5491117c3e48fe8.bindPopup(popup_491a589825e0ef8939ed5381707f3778)
+        ;
+
+        
+    
+    
+            var marker_36dfee3356f01f6dac4093ad7d5b8b61 = L.marker(
+                [40.67936, -73.9072],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_c35ad78eab7cd43e1fc4583e7385e8b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_36dfee3356f01f6dac4093ad7d5b8b61.setIcon(icon_c35ad78eab7cd43e1fc4583e7385e8b4);
+        
+    
+        var popup_b1c63725e543839645ed3dbec7d259c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f383f601b0402166a8828923deb0f5cc = $(`<div id="html_f383f601b0402166a8828923deb0f5cc" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 30846, dtype: object</div>`)[0];
+                popup_b1c63725e543839645ed3dbec7d259c6.setContent(html_f383f601b0402166a8828923deb0f5cc);
+            
+        
+
+        marker_36dfee3356f01f6dac4093ad7d5b8b61.bindPopup(popup_b1c63725e543839645ed3dbec7d259c6)
+        ;
+
+        
+    
+    
+            var marker_99a6c7baec9dd2fcec22f09481e078ca = L.marker(
+                [40.72042, -73.97998],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_882d5b1d2276f8133afcae22b4f10486 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_99a6c7baec9dd2fcec22f09481e078ca.setIcon(icon_882d5b1d2276f8133afcae22b4f10486);
+        
+    
+        var popup_0b748161637674086cbe7d2b38b3e22c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3065164b6fceb73daff08f0d0497d376 = $(`<div id="html_3065164b6fceb73daff08f0d0497d376" style="width: 100.0%; height: 100.0%;">neighbourhood_group       Manhattan room_type              Private room Name: 7149, dtype: object</div>`)[0];
+                popup_0b748161637674086cbe7d2b38b3e22c.setContent(html_3065164b6fceb73daff08f0d0497d376);
+            
+        
+
+        marker_99a6c7baec9dd2fcec22f09481e078ca.bindPopup(popup_0b748161637674086cbe7d2b38b3e22c)
+        ;
+
+        
+    
+    
+            var marker_27c09a5ec46e77cfbe6c0ff6c7da3f27 = L.marker(
+                [40.67289, -73.76699],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_fa9370394695596f388179173e100e2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_27c09a5ec46e77cfbe6c0ff6c7da3f27.setIcon(icon_fa9370394695596f388179173e100e2a);
+        
+    
+        var popup_6a46f1e56bbc59068516517179bf1344 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc6b3204dc79d21b9687ee84f90692ae = $(`<div id="html_bc6b3204dc79d21b9687ee84f90692ae" style="width: 100.0%; height: 100.0%;">neighbourhood_group             Queens room_type              Entire home/apt Name: 46330, dtype: object</div>`)[0];
+                popup_6a46f1e56bbc59068516517179bf1344.setContent(html_bc6b3204dc79d21b9687ee84f90692ae);
+            
+        
+
+        marker_27c09a5ec46e77cfbe6c0ff6c7da3f27.bindPopup(popup_6a46f1e56bbc59068516517179bf1344)
+        ;
+
+        
+    
+    
+            var marker_9ea30e738cebc5398dbbbdaed06b50a3 = L.marker(
+                [40.68112, -73.96492],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_a5b4c45b0c91cd0b13da73460e3b0897 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9ea30e738cebc5398dbbbdaed06b50a3.setIcon(icon_a5b4c45b0c91cd0b13da73460e3b0897);
+        
+    
+        var popup_570b27b1a04febad66d5592234348169 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f0149533cb2be1657c579d0ed5248a1 = $(`<div id="html_5f0149533cb2be1657c579d0ed5248a1" style="width: 100.0%; height: 100.0%;">neighbourhood_group           Brooklyn room_type              Entire home/apt Name: 14730, dtype: object</div>`)[0];
+                popup_570b27b1a04febad66d5592234348169.setContent(html_5f0149533cb2be1657c579d0ed5248a1);
+            
+        
+
+        marker_9ea30e738cebc5398dbbbdaed06b50a3.bindPopup(popup_570b27b1a04febad66d5592234348169)
+        ;
+
+        
+    
+    
+            var marker_b21be0252e647b40a62c81fcf9d14436 = L.marker(
+                [40.82718, -73.94883],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_d431f3f59efe396b14dc2dabf563ee0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b21be0252e647b40a62c81fcf9d14436.setIcon(icon_d431f3f59efe396b14dc2dabf563ee0f);
+        
+    
+        var popup_bfc34fb3c793b31f4fe2d017cf1a1c4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e05fb99211aee5699882bdd6f461bb50 = $(`<div id="html_e05fb99211aee5699882bdd6f461bb50" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 30876, dtype: object</div>`)[0];
+                popup_bfc34fb3c793b31f4fe2d017cf1a1c4b.setContent(html_e05fb99211aee5699882bdd6f461bb50);
+            
+        
+
+        marker_b21be0252e647b40a62c81fcf9d14436.bindPopup(popup_bfc34fb3c793b31f4fe2d017cf1a1c4b)
+        ;
+
+        
+    
+    
+            var marker_2c3b0b6359ef709bbf88f3d11402bddc = L.marker(
+                [40.76038, -73.99951],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_2ef94773a9607e261359fefad0e1c710 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2c3b0b6359ef709bbf88f3d11402bddc.setIcon(icon_2ef94773a9607e261359fefad0e1c710);
+        
+    
+        var popup_f16abe2f6510377d7a55c720cfab3feb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14556ea4679141aeda1272f1c0c3673d = $(`<div id="html_14556ea4679141aeda1272f1c0c3673d" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 19424, dtype: object</div>`)[0];
+                popup_f16abe2f6510377d7a55c720cfab3feb.setContent(html_14556ea4679141aeda1272f1c0c3673d);
+            
+        
+
+        marker_2c3b0b6359ef709bbf88f3d11402bddc.bindPopup(popup_f16abe2f6510377d7a55c720cfab3feb)
+        ;
+
+        
+    
+    
+            var marker_03ebcf83356f19a6f43d8a1f2a332da4 = L.marker(
+                [40.68928, -73.95541],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_cddcc43a22a8fce4ba1ce57323e9e462 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_03ebcf83356f19a6f43d8a1f2a332da4.setIcon(icon_cddcc43a22a8fce4ba1ce57323e9e462);
+        
+    
+        var popup_2def90058df59bc04d5efc1dbde98288 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec922514487eb84b650d13f849ac6453 = $(`<div id="html_ec922514487eb84b650d13f849ac6453" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 30012, dtype: object</div>`)[0];
+                popup_2def90058df59bc04d5efc1dbde98288.setContent(html_ec922514487eb84b650d13f849ac6453);
+            
+        
+
+        marker_03ebcf83356f19a6f43d8a1f2a332da4.bindPopup(popup_2def90058df59bc04d5efc1dbde98288)
+        ;
+
+        
+    
+    
+            var marker_238d4a33146132fc878f3cf7f23c189b = L.marker(
+                [40.69821, -73.91559],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_3704f04a4e03b1efec6ede31fc7c8852 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_238d4a33146132fc878f3cf7f23c189b.setIcon(icon_3704f04a4e03b1efec6ede31fc7c8852);
+        
+    
+        var popup_2ca979ee01bd94549f6211fae2a79f10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e3a9023eefdb75c27e00bad56be5138 = $(`<div id="html_7e3a9023eefdb75c27e00bad56be5138" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 33287, dtype: object</div>`)[0];
+                popup_2ca979ee01bd94549f6211fae2a79f10.setContent(html_7e3a9023eefdb75c27e00bad56be5138);
+            
+        
+
+        marker_238d4a33146132fc878f3cf7f23c189b.bindPopup(popup_2ca979ee01bd94549f6211fae2a79f10)
+        ;
+
+        
+    
+    
+            var marker_d3822e42c53bc8291b2018db49d5f5c1 = L.marker(
+                [40.74711, -73.99281],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_24816397db5dae199f55d2ed6034d9d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_d3822e42c53bc8291b2018db49d5f5c1.setIcon(icon_24816397db5dae199f55d2ed6034d9d3);
+        
+    
+        var popup_80746ae5a2a088940a2cf02de7429419 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10104303e35c84e71d498fb570a8d113 = $(`<div id="html_10104303e35c84e71d498fb570a8d113" style="width: 100.0%; height: 100.0%;">neighbourhood_group       Manhattan room_type              Private room Name: 16072, dtype: object</div>`)[0];
+                popup_80746ae5a2a088940a2cf02de7429419.setContent(html_10104303e35c84e71d498fb570a8d113);
+            
+        
+
+        marker_d3822e42c53bc8291b2018db49d5f5c1.bindPopup(popup_80746ae5a2a088940a2cf02de7429419)
+        ;
+
+        
+    
+    
+            var marker_05c0b5ba99b63bf3f437e24743b64917 = L.marker(
+                [40.70777, -73.94816],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_a63cef8ec0bf20b2be1c455ae0821427 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_05c0b5ba99b63bf3f437e24743b64917.setIcon(icon_a63cef8ec0bf20b2be1c455ae0821427);
+        
+    
+        var popup_4fb76f374181a5315bd748a76acf21ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d13be70d3e0a75252e3b9ed345b579f = $(`<div id="html_7d13be70d3e0a75252e3b9ed345b579f" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 6722, dtype: object</div>`)[0];
+                popup_4fb76f374181a5315bd748a76acf21ad.setContent(html_7d13be70d3e0a75252e3b9ed345b579f);
+            
+        
+
+        marker_05c0b5ba99b63bf3f437e24743b64917.bindPopup(popup_4fb76f374181a5315bd748a76acf21ad)
+        ;
+
+        
+    
+    
+            var marker_0e1c603244002c33ce2240e5f7bf9ff4 = L.marker(
+                [40.72921, -73.98629],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_9ba90e640bfd9d73da8db80f93249a4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0e1c603244002c33ce2240e5f7bf9ff4.setIcon(icon_9ba90e640bfd9d73da8db80f93249a4c);
+        
+    
+        var popup_dd77e8f36ba77cdf4e6707d64ab2642d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8395082e9a7e79ad69f588d36eececd5 = $(`<div id="html_8395082e9a7e79ad69f588d36eececd5" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 30972, dtype: object</div>`)[0];
+                popup_dd77e8f36ba77cdf4e6707d64ab2642d.setContent(html_8395082e9a7e79ad69f588d36eececd5);
+            
+        
+
+        marker_0e1c603244002c33ce2240e5f7bf9ff4.bindPopup(popup_dd77e8f36ba77cdf4e6707d64ab2642d)
+        ;
+
+        
+    
+    
+            var marker_1f229bf9620da40c251f80be1d6aa2a0 = L.marker(
+                [40.64448, -74.08485],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_f55bbab4db34f200f5409f855af97c42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1f229bf9620da40c251f80be1d6aa2a0.setIcon(icon_f55bbab4db34f200f5409f855af97c42);
+        
+    
+        var popup_1f8eb89d7b9518472cff282f34440e1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f50ce6c43d9a5924b0d9f9afa93fd71 = $(`<div id="html_8f50ce6c43d9a5924b0d9f9afa93fd71" style="width: 100.0%; height: 100.0%;">neighbourhood_group      Staten Island room_type              Entire home/apt Name: 43437, dtype: object</div>`)[0];
+                popup_1f8eb89d7b9518472cff282f34440e1b.setContent(html_8f50ce6c43d9a5924b0d9f9afa93fd71);
+            
+        
+
+        marker_1f229bf9620da40c251f80be1d6aa2a0.bindPopup(popup_1f8eb89d7b9518472cff282f34440e1b)
+        ;
+
+        
+    
+    
+            var marker_042ffe59b623d923c80e963c5d072d73 = L.marker(
+                [40.72423, -73.98327],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_f64db52b2a7ceaa6e89e3a6ec78cdfbe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_042ffe59b623d923c80e963c5d072d73.setIcon(icon_f64db52b2a7ceaa6e89e3a6ec78cdfbe);
+        
+    
+        var popup_4fdfb55c62cc3bf000ac38f594586c7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f877df8c2e86e10f7d7c0beefb6ce735 = $(`<div id="html_f877df8c2e86e10f7d7c0beefb6ce735" style="width: 100.0%; height: 100.0%;">neighbourhood_group      Manhattan room_type              Shared room Name: 13551, dtype: object</div>`)[0];
+                popup_4fdfb55c62cc3bf000ac38f594586c7c.setContent(html_f877df8c2e86e10f7d7c0beefb6ce735);
+            
+        
+
+        marker_042ffe59b623d923c80e963c5d072d73.bindPopup(popup_4fdfb55c62cc3bf000ac38f594586c7c)
+        ;
+
+        
+    
+    
+            var marker_3acb2d487a0f0ce46d629c5d042b842a = L.marker(
+                [40.68057, -73.94585],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_0dce9604196aec7a7ab47100a0abdca2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_3acb2d487a0f0ce46d629c5d042b842a.setIcon(icon_0dce9604196aec7a7ab47100a0abdca2);
+        
+    
+        var popup_59991cf129850ba534475f6d81dd12ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f24e9914fe8acf149d433bb00087436 = $(`<div id="html_6f24e9914fe8acf149d433bb00087436" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 42516, dtype: object</div>`)[0];
+                popup_59991cf129850ba534475f6d81dd12ae.setContent(html_6f24e9914fe8acf149d433bb00087436);
+            
+        
+
+        marker_3acb2d487a0f0ce46d629c5d042b842a.bindPopup(popup_59991cf129850ba534475f6d81dd12ae)
+        ;
+
+        
+    
+    
+            var marker_570a6b18276b79529881b7523315ad6e = L.marker(
+                [40.7433, -74.00119],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_5599868b549c20b3eda83e136fc88964 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_570a6b18276b79529881b7523315ad6e.setIcon(icon_5599868b549c20b3eda83e136fc88964);
+        
+    
+        var popup_6f9d289887685746fbff33bdaaa3e69e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b72187f011e7d7422c7387634f52e69 = $(`<div id="html_2b72187f011e7d7422c7387634f52e69" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 33711, dtype: object</div>`)[0];
+                popup_6f9d289887685746fbff33bdaaa3e69e.setContent(html_2b72187f011e7d7422c7387634f52e69);
+            
+        
+
+        marker_570a6b18276b79529881b7523315ad6e.bindPopup(popup_6f9d289887685746fbff33bdaaa3e69e)
+        ;
+
+        
+    
+    
+            var marker_ae85598222e36eb485227edc1e2f04ab = L.marker(
+                [40.76186, -73.97324],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_d29ac02208d1b763050de775d9946033 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ae85598222e36eb485227edc1e2f04ab.setIcon(icon_d29ac02208d1b763050de775d9946033);
+        
+    
+        var popup_c69c08cb8cf794834d41e68b3b8558bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a7fced99845a586482fb711c9f67d5f = $(`<div id="html_0a7fced99845a586482fb711c9f67d5f" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 7198, dtype: object</div>`)[0];
+                popup_c69c08cb8cf794834d41e68b3b8558bb.setContent(html_0a7fced99845a586482fb711c9f67d5f);
+            
+        
+
+        marker_ae85598222e36eb485227edc1e2f04ab.bindPopup(popup_c69c08cb8cf794834d41e68b3b8558bb)
+        ;
+
+        
+    
+    
+            var marker_168aaddb4e34ee192c8557a1e8c5a938 = L.marker(
+                [40.76638, -73.93236],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_7d4a3882fb7d0063ad1f886ae1310057 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_168aaddb4e34ee192c8557a1e8c5a938.setIcon(icon_7d4a3882fb7d0063ad1f886ae1310057);
+        
+    
+        var popup_d619d3554e6129bc43c1fccebb973ff4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_524f988985b309dde2827a5954365b7a = $(`<div id="html_524f988985b309dde2827a5954365b7a" style="width: 100.0%; height: 100.0%;">neighbourhood_group             Queens room_type              Entire home/apt Name: 6411, dtype: object</div>`)[0];
+                popup_d619d3554e6129bc43c1fccebb973ff4.setContent(html_524f988985b309dde2827a5954365b7a);
+            
+        
+
+        marker_168aaddb4e34ee192c8557a1e8c5a938.bindPopup(popup_d619d3554e6129bc43c1fccebb973ff4)
+        ;
+
+        
+    
+    
+            var marker_7224a840068301b62f1d9e8cbb12b724 = L.marker(
+                [40.72651, -73.86173],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_5c1cdc6cf9661e6c7c52146633acb1ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7224a840068301b62f1d9e8cbb12b724.setIcon(icon_5c1cdc6cf9661e6c7c52146633acb1ee);
+        
+    
+        var popup_c632d36b4e33623e194958fec38b657f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48d5c21a3ac428b14c99ce1651f97169 = $(`<div id="html_48d5c21a3ac428b14c99ce1651f97169" style="width: 100.0%; height: 100.0%;">neighbourhood_group             Queens room_type              Entire home/apt Name: 21349, dtype: object</div>`)[0];
+                popup_c632d36b4e33623e194958fec38b657f.setContent(html_48d5c21a3ac428b14c99ce1651f97169);
+            
+        
+
+        marker_7224a840068301b62f1d9e8cbb12b724.bindPopup(popup_c632d36b4e33623e194958fec38b657f)
+        ;
+
+        
+    
+    
+            var marker_0c36b5d458bcd077fa3f26a38bbd2b9d = L.marker(
+                [40.7155, -73.95603],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_ab036b8a7e45454041c258e3a60d0a04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_0c36b5d458bcd077fa3f26a38bbd2b9d.setIcon(icon_ab036b8a7e45454041c258e3a60d0a04);
+        
+    
+        var popup_4c5a1a6631ba2cc777107c7e9384bb8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5aec1a569df98d989dd8749f42afe4e0 = $(`<div id="html_5aec1a569df98d989dd8749f42afe4e0" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 9352, dtype: object</div>`)[0];
+                popup_4c5a1a6631ba2cc777107c7e9384bb8f.setContent(html_5aec1a569df98d989dd8749f42afe4e0);
+            
+        
+
+        marker_0c36b5d458bcd077fa3f26a38bbd2b9d.bindPopup(popup_4c5a1a6631ba2cc777107c7e9384bb8f)
+        ;
+
+        
+    
+    
+            var marker_eb4169d1c0797f6d6dc7b41b34f2387f = L.marker(
+                [40.80416, -73.96538],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_70bf3a6a4da851c2a0a927f27daa3fc0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_eb4169d1c0797f6d6dc7b41b34f2387f.setIcon(icon_70bf3a6a4da851c2a0a927f27daa3fc0);
+        
+    
+        var popup_38de3edcc67542dce1bdbec7c14be5f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_987c7423066489229ce6708334cbf4a6 = $(`<div id="html_987c7423066489229ce6708334cbf4a6" style="width: 100.0%; height: 100.0%;">neighbourhood_group       Manhattan room_type              Private room Name: 22466, dtype: object</div>`)[0];
+                popup_38de3edcc67542dce1bdbec7c14be5f6.setContent(html_987c7423066489229ce6708334cbf4a6);
+            
+        
+
+        marker_eb4169d1c0797f6d6dc7b41b34f2387f.bindPopup(popup_38de3edcc67542dce1bdbec7c14be5f6)
+        ;
+
+        
+    
+    
+            var marker_6852cf76bbcf23e1063f3210ea9f9c1e = L.marker(
+                [40.80012, -73.94549],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_ca3e52ffdf93b217c942853c4d011e0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6852cf76bbcf23e1063f3210ea9f9c1e.setIcon(icon_ca3e52ffdf93b217c942853c4d011e0a);
+        
+    
+        var popup_46f5ea8de6fcf4affec1fc33f2848e8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7aa95c1e9e2759473ca899b121bc44a2 = $(`<div id="html_7aa95c1e9e2759473ca899b121bc44a2" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 26332, dtype: object</div>`)[0];
+                popup_46f5ea8de6fcf4affec1fc33f2848e8e.setContent(html_7aa95c1e9e2759473ca899b121bc44a2);
+            
+        
+
+        marker_6852cf76bbcf23e1063f3210ea9f9c1e.bindPopup(popup_46f5ea8de6fcf4affec1fc33f2848e8e)
+        ;
+
+        
+    
+    
+            var marker_303cedbd09e28d480f69621956371ef5 = L.marker(
+                [40.7469, -73.99038],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_77666bc07a758750bd5787802de47f0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_303cedbd09e28d480f69621956371ef5.setIcon(icon_77666bc07a758750bd5787802de47f0b);
+        
+    
+        var popup_d7fff8bc054940a21c8ff570064a4c28 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_add151809fb376c080be44665e4c51f5 = $(`<div id="html_add151809fb376c080be44665e4c51f5" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 48118, dtype: object</div>`)[0];
+                popup_d7fff8bc054940a21c8ff570064a4c28.setContent(html_add151809fb376c080be44665e4c51f5);
+            
+        
+
+        marker_303cedbd09e28d480f69621956371ef5.bindPopup(popup_d7fff8bc054940a21c8ff570064a4c28)
+        ;
+
+        
+    
+    
+            var marker_487e56dfc06edb4114f8622b027f6b90 = L.marker(
+                [40.74606, -73.95765],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_36f1f026f51cc4dc04914f3795b93964 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_487e56dfc06edb4114f8622b027f6b90.setIcon(icon_36f1f026f51cc4dc04914f3795b93964);
+        
+    
+        var popup_f017b470020357c5fb13596e223003de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d2074c2ad6ae6e71e8e761e24393bd9 = $(`<div id="html_7d2074c2ad6ae6e71e8e761e24393bd9" style="width: 100.0%; height: 100.0%;">neighbourhood_group             Queens room_type              Entire home/apt Name: 4159, dtype: object</div>`)[0];
+                popup_f017b470020357c5fb13596e223003de.setContent(html_7d2074c2ad6ae6e71e8e761e24393bd9);
+            
+        
+
+        marker_487e56dfc06edb4114f8622b027f6b90.bindPopup(popup_f017b470020357c5fb13596e223003de)
+        ;
+
+        
+    
+    
+            var marker_af0509af77b22171c806aa5b537f53c8 = L.marker(
+                [40.73981, -74.00031],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_3221a0709179ee1f0cf527a799120468 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_af0509af77b22171c806aa5b537f53c8.setIcon(icon_3221a0709179ee1f0cf527a799120468);
+        
+    
+        var popup_19a89d19de70adc30de729937a016b65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_396f2c4ecb5f5da775110a3b1ea4e816 = $(`<div id="html_396f2c4ecb5f5da775110a3b1ea4e816" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 30234, dtype: object</div>`)[0];
+                popup_19a89d19de70adc30de729937a016b65.setContent(html_396f2c4ecb5f5da775110a3b1ea4e816);
+            
+        
+
+        marker_af0509af77b22171c806aa5b537f53c8.bindPopup(popup_19a89d19de70adc30de729937a016b65)
+        ;
+
+        
+    
+    
+            var marker_20d593f70a4332c05a0fef973d9bde96 = L.marker(
+                [40.72607, -73.95103],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_f2bcfa2d8e1b4a49632535b3bd0e7f33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_20d593f70a4332c05a0fef973d9bde96.setIcon(icon_f2bcfa2d8e1b4a49632535b3bd0e7f33);
+        
+    
+        var popup_b84a0681ec7d216a2202e9aa49dd3bd5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8dd00497bd54e0dc991723d6d9507de = $(`<div id="html_b8dd00497bd54e0dc991723d6d9507de" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 5575, dtype: object</div>`)[0];
+                popup_b84a0681ec7d216a2202e9aa49dd3bd5.setContent(html_b8dd00497bd54e0dc991723d6d9507de);
+            
+        
+
+        marker_20d593f70a4332c05a0fef973d9bde96.bindPopup(popup_b84a0681ec7d216a2202e9aa49dd3bd5)
+        ;
+
+        
+    
+    
+            var marker_34daaa52b2984959ee8cefe0ceb36217 = L.marker(
+                [40.71288, -73.81368],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_b85c70747d2a3388b691ba612603f393 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_34daaa52b2984959ee8cefe0ceb36217.setIcon(icon_b85c70747d2a3388b691ba612603f393);
+        
+    
+        var popup_20e957bb458918217508df50ffa971b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b01787aca4c334b56204723dcb6aa119 = $(`<div id="html_b01787aca4c334b56204723dcb6aa119" style="width: 100.0%; height: 100.0%;">neighbourhood_group             Queens room_type              Entire home/apt Name: 47298, dtype: object</div>`)[0];
+                popup_20e957bb458918217508df50ffa971b1.setContent(html_b01787aca4c334b56204723dcb6aa119);
+            
+        
+
+        marker_34daaa52b2984959ee8cefe0ceb36217.bindPopup(popup_20e957bb458918217508df50ffa971b1)
+        ;
+
+        
+    
+    
+            var marker_1e3ced9958b04731ef69a7a80d080e02 = L.marker(
+                [40.80657, -73.95532],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_3994318fc4ddf7b9d5f1b292acd43d0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1e3ced9958b04731ef69a7a80d080e02.setIcon(icon_3994318fc4ddf7b9d5f1b292acd43d0d);
+        
+    
+        var popup_7346914e1450498c7520ace6cab4ee13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3490cfaf4184f091102e4eb7fe69e7c = $(`<div id="html_e3490cfaf4184f091102e4eb7fe69e7c" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 7103, dtype: object</div>`)[0];
+                popup_7346914e1450498c7520ace6cab4ee13.setContent(html_e3490cfaf4184f091102e4eb7fe69e7c);
+            
+        
+
+        marker_1e3ced9958b04731ef69a7a80d080e02.bindPopup(popup_7346914e1450498c7520ace6cab4ee13)
+        ;
+
+        
+    
+    
+            var marker_8e8e581bfa3d13ff324ca4d5c67fcb5b = L.marker(
+                [40.82875, -73.94574],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_edc58828928a95ce1e0f39cec719ee13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_8e8e581bfa3d13ff324ca4d5c67fcb5b.setIcon(icon_edc58828928a95ce1e0f39cec719ee13);
+        
+    
+        var popup_c666e509fb855e6d6d39373f26a214f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d48f13a7e5deb68dc5055e21cdb69bf = $(`<div id="html_3d48f13a7e5deb68dc5055e21cdb69bf" style="width: 100.0%; height: 100.0%;">neighbourhood_group       Manhattan room_type              Private room Name: 8697, dtype: object</div>`)[0];
+                popup_c666e509fb855e6d6d39373f26a214f9.setContent(html_3d48f13a7e5deb68dc5055e21cdb69bf);
+            
+        
+
+        marker_8e8e581bfa3d13ff324ca4d5c67fcb5b.bindPopup(popup_c666e509fb855e6d6d39373f26a214f9)
+        ;
+
+        
+    
+    
+            var marker_20cee7c97c46849256c688701b6c8057 = L.marker(
+                [40.84344, -73.93967],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_2a6c92fbddec2e3eba9d09ecd46f3ce2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_20cee7c97c46849256c688701b6c8057.setIcon(icon_2a6c92fbddec2e3eba9d09ecd46f3ce2);
+        
+    
+        var popup_b185de40fa93db073f043951006c2822 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b586d332e579522b4dcd5db0abfb53a7 = $(`<div id="html_b586d332e579522b4dcd5db0abfb53a7" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 47320, dtype: object</div>`)[0];
+                popup_b185de40fa93db073f043951006c2822.setContent(html_b586d332e579522b4dcd5db0abfb53a7);
+            
+        
+
+        marker_20cee7c97c46849256c688701b6c8057.bindPopup(popup_b185de40fa93db073f043951006c2822)
+        ;
+
+        
+    
+    
+            var marker_eb3c5feafa6e03fbba1000fa2373a4e6 = L.marker(
+                [40.69264, -73.90485],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_770f68be452dd3872c91a21db37f863c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_eb3c5feafa6e03fbba1000fa2373a4e6.setIcon(icon_770f68be452dd3872c91a21db37f863c);
+        
+    
+        var popup_9c1816172c01032b2a9a09479a629238 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57fc0ba7f6af5ce56c7eac4fcc41b43c = $(`<div id="html_57fc0ba7f6af5ce56c7eac4fcc41b43c" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 28325, dtype: object</div>`)[0];
+                popup_9c1816172c01032b2a9a09479a629238.setContent(html_57fc0ba7f6af5ce56c7eac4fcc41b43c);
+            
+        
+
+        marker_eb3c5feafa6e03fbba1000fa2373a4e6.bindPopup(popup_9c1816172c01032b2a9a09479a629238)
+        ;
+
+        
+    
+    
+            var marker_92106ed06947a6eb369e4ebc87e7782a = L.marker(
+                [40.76388, -73.98874],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_f719a3a1690c9de49f3603542a168d82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_92106ed06947a6eb369e4ebc87e7782a.setIcon(icon_f719a3a1690c9de49f3603542a168d82);
+        
+    
+        var popup_1bac08eec336a2171dec7a9fea2c42cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_140b652b9e291284417eed4554b9e683 = $(`<div id="html_140b652b9e291284417eed4554b9e683" style="width: 100.0%; height: 100.0%;">neighbourhood_group       Manhattan room_type              Private room Name: 18573, dtype: object</div>`)[0];
+                popup_1bac08eec336a2171dec7a9fea2c42cc.setContent(html_140b652b9e291284417eed4554b9e683);
+            
+        
+
+        marker_92106ed06947a6eb369e4ebc87e7782a.bindPopup(popup_1bac08eec336a2171dec7a9fea2c42cc)
+        ;
+
+        
+    
+    
+            var marker_eaf5797fa94ed4c32884a761af48f608 = L.marker(
+                [40.79601, -73.93454],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_9db938c519a68b6ab55a6511f871425a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_eaf5797fa94ed4c32884a761af48f608.setIcon(icon_9db938c519a68b6ab55a6511f871425a);
+        
+    
+        var popup_b6c4d203580ebc11471820b77419b5ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7e85cd231e4d1ab89c7edb6b616f5d2 = $(`<div id="html_f7e85cd231e4d1ab89c7edb6b616f5d2" style="width: 100.0%; height: 100.0%;">neighbourhood_group       Manhattan room_type              Private room Name: 8616, dtype: object</div>`)[0];
+                popup_b6c4d203580ebc11471820b77419b5ce.setContent(html_f7e85cd231e4d1ab89c7edb6b616f5d2);
+            
+        
+
+        marker_eaf5797fa94ed4c32884a761af48f608.bindPopup(popup_b6c4d203580ebc11471820b77419b5ce)
+        ;
+
+        
+    
+    
+            var marker_44e005c377fa7b08967476341c1430fe = L.marker(
+                [40.68889, -73.97632],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_f68e405a0db32358d78111ced6ad45af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_44e005c377fa7b08967476341c1430fe.setIcon(icon_f68e405a0db32358d78111ced6ad45af);
+        
+    
+        var popup_7632a4881dae46e946a4f4c03324705d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2959cbf3031765e4c99711e4181c1006 = $(`<div id="html_2959cbf3031765e4c99711e4181c1006" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 48384, dtype: object</div>`)[0];
+                popup_7632a4881dae46e946a4f4c03324705d.setContent(html_2959cbf3031765e4c99711e4181c1006);
+            
+        
+
+        marker_44e005c377fa7b08967476341c1430fe.bindPopup(popup_7632a4881dae46e946a4f4c03324705d)
+        ;
+
+        
+    
+    
+            var marker_f7a9fbabcdcbb87a2a649212e5cf45be = L.marker(
+                [40.68639, -73.9202],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_85805fc7f3b6dba30b92885cc14ca802 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_f7a9fbabcdcbb87a2a649212e5cf45be.setIcon(icon_85805fc7f3b6dba30b92885cc14ca802);
+        
+    
+        var popup_93cb73635a2ae1b31d6f06479da314ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e297d32c057a20ca99ebce12740acc0e = $(`<div id="html_e297d32c057a20ca99ebce12740acc0e" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 26757, dtype: object</div>`)[0];
+                popup_93cb73635a2ae1b31d6f06479da314ea.setContent(html_e297d32c057a20ca99ebce12740acc0e);
+            
+        
+
+        marker_f7a9fbabcdcbb87a2a649212e5cf45be.bindPopup(popup_93cb73635a2ae1b31d6f06479da314ea)
+        ;
+
+        
+    
+    
+            var marker_8f057bbbd015421c07f3a290f5162af3 = L.marker(
+                [40.74805, -73.97351],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_a394d0fb1d448f86b4a98b4c7e1eef86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8f057bbbd015421c07f3a290f5162af3.setIcon(icon_a394d0fb1d448f86b4a98b4c7e1eef86);
+        
+    
+        var popup_9e54fe60cf9a93b8f81cbc63d2361268 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a7965ef84b935c78762402702616bca = $(`<div id="html_0a7965ef84b935c78762402702616bca" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 38724, dtype: object</div>`)[0];
+                popup_9e54fe60cf9a93b8f81cbc63d2361268.setContent(html_0a7965ef84b935c78762402702616bca);
+            
+        
+
+        marker_8f057bbbd015421c07f3a290f5162af3.bindPopup(popup_9e54fe60cf9a93b8f81cbc63d2361268)
+        ;
+
+        
+    
+    
+            var marker_a13de2d86463b286fc390087835113db = L.marker(
+                [40.68122, -73.90399],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_045a7c06c15ca18f4b38d136a9e86978 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_a13de2d86463b286fc390087835113db.setIcon(icon_045a7c06c15ca18f4b38d136a9e86978);
+        
+    
+        var popup_dfe5c4be2f4c2dfa3d14934f6b939699 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81bec2582714dafd26e130ae2d9bee45 = $(`<div id="html_81bec2582714dafd26e130ae2d9bee45" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 16189, dtype: object</div>`)[0];
+                popup_dfe5c4be2f4c2dfa3d14934f6b939699.setContent(html_81bec2582714dafd26e130ae2d9bee45);
+            
+        
+
+        marker_a13de2d86463b286fc390087835113db.bindPopup(popup_dfe5c4be2f4c2dfa3d14934f6b939699)
+        ;
+
+        
+    
+    
+            var marker_c8b664abe78a5ee09932d691e5ff1111 = L.marker(
+                [40.71822, -73.95134],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_6625a9c0ba69c0578ae946b9840cdd8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c8b664abe78a5ee09932d691e5ff1111.setIcon(icon_6625a9c0ba69c0578ae946b9840cdd8e);
+        
+    
+        var popup_b5a442fcd057542cc01dac279e208c46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2684b103f41c8f8e6870cefa8f77770 = $(`<div id="html_f2684b103f41c8f8e6870cefa8f77770" style="width: 100.0%; height: 100.0%;">neighbourhood_group           Brooklyn room_type              Entire home/apt Name: 19593, dtype: object</div>`)[0];
+                popup_b5a442fcd057542cc01dac279e208c46.setContent(html_f2684b103f41c8f8e6870cefa8f77770);
+            
+        
+
+        marker_c8b664abe78a5ee09932d691e5ff1111.bindPopup(popup_b5a442fcd057542cc01dac279e208c46)
+        ;
+
+        
+    
+    
+            var marker_2e771c9a5d791882d7c9742eaf4f12e5 = L.marker(
+                [40.68251, -73.94102],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_93df19793e8fb4c38b6d5d0f4474120e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2e771c9a5d791882d7c9742eaf4f12e5.setIcon(icon_93df19793e8fb4c38b6d5d0f4474120e);
+        
+    
+        var popup_222107eb4fcdb7813b60d49f6f1678d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a55f7a77fa2f4aaea157537003cf8f9 = $(`<div id="html_3a55f7a77fa2f4aaea157537003cf8f9" style="width: 100.0%; height: 100.0%;">neighbourhood_group           Brooklyn room_type              Entire home/apt Name: 26020, dtype: object</div>`)[0];
+                popup_222107eb4fcdb7813b60d49f6f1678d6.setContent(html_3a55f7a77fa2f4aaea157537003cf8f9);
+            
+        
+
+        marker_2e771c9a5d791882d7c9742eaf4f12e5.bindPopup(popup_222107eb4fcdb7813b60d49f6f1678d6)
+        ;
+
+        
+    
+    
+            var marker_0d0b84bd52396b1e1eccb5e92d2cea58 = L.marker(
+                [40.69339, -73.90647],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_da1c92cbda69fb08349a6abfcf4ddbf3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_0d0b84bd52396b1e1eccb5e92d2cea58.setIcon(icon_da1c92cbda69fb08349a6abfcf4ddbf3);
+        
+    
+        var popup_7bcf2c8e3da2a14ea6e821e92ce0da6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b4340ba540e8d81159ef55ed935d5c2 = $(`<div id="html_1b4340ba540e8d81159ef55ed935d5c2" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 46884, dtype: object</div>`)[0];
+                popup_7bcf2c8e3da2a14ea6e821e92ce0da6c.setContent(html_1b4340ba540e8d81159ef55ed935d5c2);
+            
+        
+
+        marker_0d0b84bd52396b1e1eccb5e92d2cea58.bindPopup(popup_7bcf2c8e3da2a14ea6e821e92ce0da6c)
+        ;
+
+        
+    
+    
+            var marker_3e84163d49655beb079d345c4844d2db = L.marker(
+                [40.76219, -73.98564],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_2da31a6ac632fbce59b3e310538cd38b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3e84163d49655beb079d345c4844d2db.setIcon(icon_2da31a6ac632fbce59b3e310538cd38b);
+        
+    
+        var popup_918778e3987a93b504a865854c2f46eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_408aaeb15f8e29ce304afb9c9bea6dd8 = $(`<div id="html_408aaeb15f8e29ce304afb9c9bea6dd8" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 42407, dtype: object</div>`)[0];
+                popup_918778e3987a93b504a865854c2f46eb.setContent(html_408aaeb15f8e29ce304afb9c9bea6dd8);
+            
+        
+
+        marker_3e84163d49655beb079d345c4844d2db.bindPopup(popup_918778e3987a93b504a865854c2f46eb)
+        ;
+
+        
+    
+    
+            var marker_738af4f52400510f8f645fe4d87a25c2 = L.marker(
+                [40.80393, -73.95838],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_b9a4972e66669ddc40cfec75f064dc51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_738af4f52400510f8f645fe4d87a25c2.setIcon(icon_b9a4972e66669ddc40cfec75f064dc51);
+        
+    
+        var popup_c771c06857939e55663cef90c8321c07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0ee11a050ccd3671220d4d62972b1f3 = $(`<div id="html_c0ee11a050ccd3671220d4d62972b1f3" style="width: 100.0%; height: 100.0%;">neighbourhood_group       Manhattan room_type              Private room Name: 292, dtype: object</div>`)[0];
+                popup_c771c06857939e55663cef90c8321c07.setContent(html_c0ee11a050ccd3671220d4d62972b1f3);
+            
+        
+
+        marker_738af4f52400510f8f645fe4d87a25c2.bindPopup(popup_c771c06857939e55663cef90c8321c07)
+        ;
+
+        
+    
+    
+            var marker_2bdbb1da300f88784da3ee7bdcd64897 = L.marker(
+                [40.66359, -73.95235],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_827b41f56c953a6bf87a790a6cb51464 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_2bdbb1da300f88784da3ee7bdcd64897.setIcon(icon_827b41f56c953a6bf87a790a6cb51464);
+        
+    
+        var popup_fc032f6be168f8293e3f80015eb88d7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01bb8fe01b120246606a09f9c8a71ba0 = $(`<div id="html_01bb8fe01b120246606a09f9c8a71ba0" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 2924, dtype: object</div>`)[0];
+                popup_fc032f6be168f8293e3f80015eb88d7f.setContent(html_01bb8fe01b120246606a09f9c8a71ba0);
+            
+        
+
+        marker_2bdbb1da300f88784da3ee7bdcd64897.bindPopup(popup_fc032f6be168f8293e3f80015eb88d7f)
+        ;
+
+        
+    
+    
+            var marker_d1802cd001cd333ddd1b6b10c5c3ddb1 = L.marker(
+                [40.75538, -74.00441],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_3e664fd878849a2f1a96c1e7a541d3b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d1802cd001cd333ddd1b6b10c5c3ddb1.setIcon(icon_3e664fd878849a2f1a96c1e7a541d3b9);
+        
+    
+        var popup_0ffc2ee775507250ca0dab3e91cde3dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac71ab4f605fc35f5c5d7a95e86b1d23 = $(`<div id="html_ac71ab4f605fc35f5c5d7a95e86b1d23" style="width: 100.0%; height: 100.0%;">neighbourhood_group      Manhattan room_type              Shared room Name: 22172, dtype: object</div>`)[0];
+                popup_0ffc2ee775507250ca0dab3e91cde3dc.setContent(html_ac71ab4f605fc35f5c5d7a95e86b1d23);
+            
+        
+
+        marker_d1802cd001cd333ddd1b6b10c5c3ddb1.bindPopup(popup_0ffc2ee775507250ca0dab3e91cde3dc)
+        ;
+
+        
+    
+    
+            var marker_44fdc6928eda721015b5013395614322 = L.marker(
+                [40.7233, -73.98819],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_e643ff73b1be4dd4f1a8b1ce671a19a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_44fdc6928eda721015b5013395614322.setIcon(icon_e643ff73b1be4dd4f1a8b1ce671a19a6);
+        
+    
+        var popup_cfee5cbcdde04e7dd699109b806f249e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2d0cfe7a872c5f4542148ccb8d4635e = $(`<div id="html_b2d0cfe7a872c5f4542148ccb8d4635e" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 12549, dtype: object</div>`)[0];
+                popup_cfee5cbcdde04e7dd699109b806f249e.setContent(html_b2d0cfe7a872c5f4542148ccb8d4635e);
+            
+        
+
+        marker_44fdc6928eda721015b5013395614322.bindPopup(popup_cfee5cbcdde04e7dd699109b806f249e)
+        ;
+
+        
+    
+    
+            var marker_581c865c22fdff27eb28811bbc3aaa15 = L.marker(
+                [40.67525, -73.96408],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_ca65af9a3ae53b2714f7560ee9a4661f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_581c865c22fdff27eb28811bbc3aaa15.setIcon(icon_ca65af9a3ae53b2714f7560ee9a4661f);
+        
+    
+        var popup_ea158936cf0c73e99eaf6c6690bd7c26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b90ffd3a50f2ea4368ffe4c40bba60e7 = $(`<div id="html_b90ffd3a50f2ea4368ffe4c40bba60e7" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 26335, dtype: object</div>`)[0];
+                popup_ea158936cf0c73e99eaf6c6690bd7c26.setContent(html_b90ffd3a50f2ea4368ffe4c40bba60e7);
+            
+        
+
+        marker_581c865c22fdff27eb28811bbc3aaa15.bindPopup(popup_ea158936cf0c73e99eaf6c6690bd7c26)
+        ;
+
+        
+    
+    
+            var marker_1d3b224b4882f877c0260a321b6579f5 = L.marker(
+                [40.63808, -73.9001],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_c891f513a44d3488da197673549b96a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_1d3b224b4882f877c0260a321b6579f5.setIcon(icon_c891f513a44d3488da197673549b96a6);
+        
+    
+        var popup_30e0610f9364ad3ae406e355fd381dac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_882ee0296edd39652ccfb8a7f73ed7a9 = $(`<div id="html_882ee0296edd39652ccfb8a7f73ed7a9" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 32623, dtype: object</div>`)[0];
+                popup_30e0610f9364ad3ae406e355fd381dac.setContent(html_882ee0296edd39652ccfb8a7f73ed7a9);
+            
+        
+
+        marker_1d3b224b4882f877c0260a321b6579f5.bindPopup(popup_30e0610f9364ad3ae406e355fd381dac)
+        ;
+
+        
+    
+    
+            var marker_b7d9a20d2c84134f0bdeac91f1caaa2c = L.marker(
+                [40.69611, -73.91891],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_728029d0114da73106ffd14df1efca61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b7d9a20d2c84134f0bdeac91f1caaa2c.setIcon(icon_728029d0114da73106ffd14df1efca61);
+        
+    
+        var popup_4b73f9ae79cd66ea1d00c2f815efdead = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3273dfb0cf3ccf74d42b87283d60aff = $(`<div id="html_c3273dfb0cf3ccf74d42b87283d60aff" style="width: 100.0%; height: 100.0%;">neighbourhood_group           Brooklyn room_type              Entire home/apt Name: 13502, dtype: object</div>`)[0];
+                popup_4b73f9ae79cd66ea1d00c2f815efdead.setContent(html_c3273dfb0cf3ccf74d42b87283d60aff);
+            
+        
+
+        marker_b7d9a20d2c84134f0bdeac91f1caaa2c.bindPopup(popup_4b73f9ae79cd66ea1d00c2f815efdead)
+        ;
+
+        
+    
+    
+            var marker_e206b52bf12ef717e23eeaa02b7b2cb7 = L.marker(
+                [40.71925, -73.94293],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_e3b362b180d16121ff94cabfd56e84f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e206b52bf12ef717e23eeaa02b7b2cb7.setIcon(icon_e3b362b180d16121ff94cabfd56e84f1);
+        
+    
+        var popup_ce7e5af5032bc24ed5fa613d2556672b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09a5c4f0d6b6ee2587a55a1d3ebaae16 = $(`<div id="html_09a5c4f0d6b6ee2587a55a1d3ebaae16" style="width: 100.0%; height: 100.0%;">neighbourhood_group           Brooklyn room_type              Entire home/apt Name: 44508, dtype: object</div>`)[0];
+                popup_ce7e5af5032bc24ed5fa613d2556672b.setContent(html_09a5c4f0d6b6ee2587a55a1d3ebaae16);
+            
+        
+
+        marker_e206b52bf12ef717e23eeaa02b7b2cb7.bindPopup(popup_ce7e5af5032bc24ed5fa613d2556672b)
+        ;
+
+        
+    
+    
+            var marker_f82af21ee90b0e942c0eb4b967a1f217 = L.marker(
+                [40.63506, -73.9744],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_4af09cb160633bb302ad2ce645dc31d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_f82af21ee90b0e942c0eb4b967a1f217.setIcon(icon_4af09cb160633bb302ad2ce645dc31d5);
+        
+    
+        var popup_ffdb00224921a6847b5aaf119166f415 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12f1ecd5ba0d9bd12ac52067bbc8c9ce = $(`<div id="html_12f1ecd5ba0d9bd12ac52067bbc8c9ce" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 46386, dtype: object</div>`)[0];
+                popup_ffdb00224921a6847b5aaf119166f415.setContent(html_12f1ecd5ba0d9bd12ac52067bbc8c9ce);
+            
+        
+
+        marker_f82af21ee90b0e942c0eb4b967a1f217.bindPopup(popup_ffdb00224921a6847b5aaf119166f415)
+        ;
+
+        
+    
+    
+            var marker_e6162e08f9bb8dbc13d56c5996855bbd = L.marker(
+                [40.68285, -73.93862],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_e36d940615e6b557ca114875215b1007 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e6162e08f9bb8dbc13d56c5996855bbd.setIcon(icon_e36d940615e6b557ca114875215b1007);
+        
+    
+        var popup_d2996456add0a7ca9946ee65cc3ebfd6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_948167c4b3706d937eb6947ed21caa2a = $(`<div id="html_948167c4b3706d937eb6947ed21caa2a" style="width: 100.0%; height: 100.0%;">neighbourhood_group           Brooklyn room_type              Entire home/apt Name: 15828, dtype: object</div>`)[0];
+                popup_d2996456add0a7ca9946ee65cc3ebfd6.setContent(html_948167c4b3706d937eb6947ed21caa2a);
+            
+        
+
+        marker_e6162e08f9bb8dbc13d56c5996855bbd.bindPopup(popup_d2996456add0a7ca9946ee65cc3ebfd6)
+        ;
+
+        
+    
+    
+            var marker_a625e7f27e9f86a16f1d0070636162f1 = L.marker(
+                [40.71802, -74.01038],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_2599d9de5425f8998c791abb3fcb5abe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_a625e7f27e9f86a16f1d0070636162f1.setIcon(icon_2599d9de5425f8998c791abb3fcb5abe);
+        
+    
+        var popup_92cd6f5f4588b82657af3b915bb84124 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_523f2e6b2387265fcd466a8deb2ceee1 = $(`<div id="html_523f2e6b2387265fcd466a8deb2ceee1" style="width: 100.0%; height: 100.0%;">neighbourhood_group       Manhattan room_type              Private room Name: 39041, dtype: object</div>`)[0];
+                popup_92cd6f5f4588b82657af3b915bb84124.setContent(html_523f2e6b2387265fcd466a8deb2ceee1);
+            
+        
+
+        marker_a625e7f27e9f86a16f1d0070636162f1.bindPopup(popup_92cd6f5f4588b82657af3b915bb84124)
+        ;
+
+        
+    
+    
+            var marker_143b35e2f6aa53f7d53f79bb7ffa38e5 = L.marker(
+                [40.77895, -73.98332],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_cce53d2c13fcbbdf5224e695aa101196 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_143b35e2f6aa53f7d53f79bb7ffa38e5.setIcon(icon_cce53d2c13fcbbdf5224e695aa101196);
+        
+    
+        var popup_e6c4c257d6a9677ba8dbd6a20bf8bdbc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40f61655d0d77aedc4b6917b08d74f10 = $(`<div id="html_40f61655d0d77aedc4b6917b08d74f10" style="width: 100.0%; height: 100.0%;">neighbourhood_group       Manhattan room_type              Private room Name: 26524, dtype: object</div>`)[0];
+                popup_e6c4c257d6a9677ba8dbd6a20bf8bdbc.setContent(html_40f61655d0d77aedc4b6917b08d74f10);
+            
+        
+
+        marker_143b35e2f6aa53f7d53f79bb7ffa38e5.bindPopup(popup_e6c4c257d6a9677ba8dbd6a20bf8bdbc)
+        ;
+
+        
+    
+    
+            var marker_a50069624dc290b545986c7244c47da0 = L.marker(
+                [40.69058, -73.91402],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_2b749ea22c47fb6a9e1a583f58085118 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a50069624dc290b545986c7244c47da0.setIcon(icon_2b749ea22c47fb6a9e1a583f58085118);
+        
+    
+        var popup_781bd9aaf4a60b5aac0619233557bf0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_211801e860e6a3a47e21367c4b3c933c = $(`<div id="html_211801e860e6a3a47e21367c4b3c933c" style="width: 100.0%; height: 100.0%;">neighbourhood_group           Brooklyn room_type              Entire home/apt Name: 38977, dtype: object</div>`)[0];
+                popup_781bd9aaf4a60b5aac0619233557bf0b.setContent(html_211801e860e6a3a47e21367c4b3c933c);
+            
+        
+
+        marker_a50069624dc290b545986c7244c47da0.bindPopup(popup_781bd9aaf4a60b5aac0619233557bf0b)
+        ;
+
+        
+    
+    
+            var marker_a5e1d1a09b3fae730a1a3f668bc49590 = L.marker(
+                [40.7661, -73.95419],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_70b3535f72056574d9fb9b4650bbdd07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a5e1d1a09b3fae730a1a3f668bc49590.setIcon(icon_70b3535f72056574d9fb9b4650bbdd07);
+        
+    
+        var popup_c2c989ac113a945329707e076c9b1e3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2770a6e3b84e30a17e9186cf9fd2564 = $(`<div id="html_f2770a6e3b84e30a17e9186cf9fd2564" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 31864, dtype: object</div>`)[0];
+                popup_c2c989ac113a945329707e076c9b1e3c.setContent(html_f2770a6e3b84e30a17e9186cf9fd2564);
+            
+        
+
+        marker_a5e1d1a09b3fae730a1a3f668bc49590.bindPopup(popup_c2c989ac113a945329707e076c9b1e3c)
+        ;
+
+        
+    
+    
+            var marker_f02f367ce77a6eacfbd6b7eb0a66cafe = L.marker(
+                [40.73487, -73.95627],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_045264d6c419d4fc6bafb92ab5a7ec1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f02f367ce77a6eacfbd6b7eb0a66cafe.setIcon(icon_045264d6c419d4fc6bafb92ab5a7ec1c);
+        
+    
+        var popup_05da809dd3597ba4fec12fdb203e64eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b2d56e20a97dab6561c9bf8d2d1ab31 = $(`<div id="html_6b2d56e20a97dab6561c9bf8d2d1ab31" style="width: 100.0%; height: 100.0%;">neighbourhood_group           Brooklyn room_type              Entire home/apt Name: 4355, dtype: object</div>`)[0];
+                popup_05da809dd3597ba4fec12fdb203e64eb.setContent(html_6b2d56e20a97dab6561c9bf8d2d1ab31);
+            
+        
+
+        marker_f02f367ce77a6eacfbd6b7eb0a66cafe.bindPopup(popup_05da809dd3597ba4fec12fdb203e64eb)
+        ;
+
+        
+    
+    
+            var marker_b61760d199748552e16094a3f1f8fc10 = L.marker(
+                [40.83146, -73.89666],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_4390637ae68a8de4edf7d1d48f509454 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b61760d199748552e16094a3f1f8fc10.setIcon(icon_4390637ae68a8de4edf7d1d48f509454);
+        
+    
+        var popup_3609e137fde1b4c7e058dba8fea8df47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6bed3a41610eed919d5eff588f2ac0b = $(`<div id="html_e6bed3a41610eed919d5eff588f2ac0b" style="width: 100.0%; height: 100.0%;">neighbourhood_group              Bronx room_type              Entire home/apt Name: 48792, dtype: object</div>`)[0];
+                popup_3609e137fde1b4c7e058dba8fea8df47.setContent(html_e6bed3a41610eed919d5eff588f2ac0b);
+            
+        
+
+        marker_b61760d199748552e16094a3f1f8fc10.bindPopup(popup_3609e137fde1b4c7e058dba8fea8df47)
+        ;
+
+        
+    
+    
+            var marker_0e07e2b0ebafad63b6ac07a1b80f56a3 = L.marker(
+                [40.67105, -73.77308],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_37e39a4326724c1e6ab3431647eb0b22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_0e07e2b0ebafad63b6ac07a1b80f56a3.setIcon(icon_37e39a4326724c1e6ab3431647eb0b22);
+        
+    
+        var popup_9d7bcbe08152b1de25ca019646744eae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78d900c6bbc09a57482fe4f46e2eaa83 = $(`<div id="html_78d900c6bbc09a57482fe4f46e2eaa83" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Queens room_type              Private room Name: 48593, dtype: object</div>`)[0];
+                popup_9d7bcbe08152b1de25ca019646744eae.setContent(html_78d900c6bbc09a57482fe4f46e2eaa83);
+            
+        
+
+        marker_0e07e2b0ebafad63b6ac07a1b80f56a3.bindPopup(popup_9d7bcbe08152b1de25ca019646744eae)
+        ;
+
+        
+    
+    
+            var marker_4a432fa02f0d458b76add22e42ee6c04 = L.marker(
+                [40.68787, -73.95332],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_521775d3c81c862a32b66ec89ba522ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_4a432fa02f0d458b76add22e42ee6c04.setIcon(icon_521775d3c81c862a32b66ec89ba522ea);
+        
+    
+        var popup_cf82fd647a0d4bef32372b766cd61320 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fef2cd36e1e6d1a45ec556b7e9135d4d = $(`<div id="html_fef2cd36e1e6d1a45ec556b7e9135d4d" style="width: 100.0%; height: 100.0%;">neighbourhood_group        Brooklyn room_type              Private room Name: 18308, dtype: object</div>`)[0];
+                popup_cf82fd647a0d4bef32372b766cd61320.setContent(html_fef2cd36e1e6d1a45ec556b7e9135d4d);
+            
+        
+
+        marker_4a432fa02f0d458b76add22e42ee6c04.bindPopup(popup_cf82fd647a0d4bef32372b766cd61320)
+        ;
+
+        
+    
+    
+            var marker_7c5f2fcfc0c3cf05fef128c4359d4637 = L.marker(
+                [40.67634, -73.96177],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_f10d6a625ff5fd2522358b780a2b0013 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7c5f2fcfc0c3cf05fef128c4359d4637.setIcon(icon_f10d6a625ff5fd2522358b780a2b0013);
+        
+    
+        var popup_c1fbbfb4f408abcc6767c9924c64ea14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6267138f76181a69bc1113bf1ae3b24c = $(`<div id="html_6267138f76181a69bc1113bf1ae3b24c" style="width: 100.0%; height: 100.0%;">neighbourhood_group           Brooklyn room_type              Entire home/apt Name: 15488, dtype: object</div>`)[0];
+                popup_c1fbbfb4f408abcc6767c9924c64ea14.setContent(html_6267138f76181a69bc1113bf1ae3b24c);
+            
+        
+
+        marker_7c5f2fcfc0c3cf05fef128c4359d4637.bindPopup(popup_c1fbbfb4f408abcc6767c9924c64ea14)
+        ;
+
+        
+    
+    
+            var marker_86aa4a847859f9a16a071984bf3b213b = L.marker(
+                [40.74361, -73.91662],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_933a71da980dabb0e0e12e1de86cf124 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_86aa4a847859f9a16a071984bf3b213b.setIcon(icon_933a71da980dabb0e0e12e1de86cf124);
+        
+    
+        var popup_f93ecd85d04ec4831cd4471520f819c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2db60b64006efa7231b9ed6fb3eabcbc = $(`<div id="html_2db60b64006efa7231b9ed6fb3eabcbc" style="width: 100.0%; height: 100.0%;">neighbourhood_group             Queens room_type              Entire home/apt Name: 2261, dtype: object</div>`)[0];
+                popup_f93ecd85d04ec4831cd4471520f819c4.setContent(html_2db60b64006efa7231b9ed6fb3eabcbc);
+            
+        
+
+        marker_86aa4a847859f9a16a071984bf3b213b.bindPopup(popup_f93ecd85d04ec4831cd4471520f819c4)
+        ;
+
+        
+    
+    
+            var marker_2b0a30a2af0f0c48b7612b9780d189b1 = L.marker(
+                [40.68129, -73.99426],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_89d379058ed4115b9083563354225e74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2b0a30a2af0f0c48b7612b9780d189b1.setIcon(icon_89d379058ed4115b9083563354225e74);
+        
+    
+        var popup_6fe6009e992c0822b3d2c90e8607cb84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1dfa84c5713e5e0d13ca4459ee2c518f = $(`<div id="html_1dfa84c5713e5e0d13ca4459ee2c518f" style="width: 100.0%; height: 100.0%;">neighbourhood_group           Brooklyn room_type              Entire home/apt Name: 10373, dtype: object</div>`)[0];
+                popup_6fe6009e992c0822b3d2c90e8607cb84.setContent(html_1dfa84c5713e5e0d13ca4459ee2c518f);
+            
+        
+
+        marker_2b0a30a2af0f0c48b7612b9780d189b1.bindPopup(popup_6fe6009e992c0822b3d2c90e8607cb84)
+        ;
+
+        
+    
+    
+            var marker_54c0640e14fb288280a5bbe6c6cd8895 = L.marker(
+                [40.70641, -74.01047],
+                {}
+            ).addTo(map_a98c8179d8c175b3d29476acc6e53d8a);
+        
+    
+            var icon_2f15c44621d19018bf2175460f1a827e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_54c0640e14fb288280a5bbe6c6cd8895.setIcon(icon_2f15c44621d19018bf2175460f1a827e);
+        
+    
+        var popup_5656171e8ed25dcf4efd9b69bf2325d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_facf2510e71548a299be13f989c5c54a = $(`<div id="html_facf2510e71548a299be13f989c5c54a" style="width: 100.0%; height: 100.0%;">neighbourhood_group          Manhattan room_type              Entire home/apt Name: 41374, dtype: object</div>`)[0];
+                popup_5656171e8ed25dcf4efd9b69bf2325d7.setContent(html_facf2510e71548a299be13f989c5c54a);
+            
+        
+
+        marker_54c0640e14fb288280a5bbe6c6cd8895.bindPopup(popup_5656171e8ed25dcf4efd9b69bf2325d7)
+        ;
+
+        
+    
+</script>
+</html>
