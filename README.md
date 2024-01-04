@@ -1,0 +1,3 @@
+Projeto de analise de hoteis com perguntas sobre valores localização...
+
+Abrem o menu e escolham as opções
