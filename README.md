@@ -26,20 +26,28 @@ Respostas: Veja respostas detalhadas para perguntas sobre os dados de hospedagem
 Gráficos: Visualize gráficos que mostram a distribuição de preços e o número de reviews dos imóveis.
 PDF: Gere um PDF com as análises, incluindo gráficos e estatísticas.
 Mapas: Explore os mapas dos hotéis.
+
 Localização: Veja a localização das hospedagens.
+
 📁 Estrutura do Projeto
+
 analise_dados_hospedagem_ny.py: Script principal do Streamlit que roda o aplicativo.
-executa.bat: Arquivo de script para executar o aplicativo facilmente no Windows.
-template.png: Template para o PDF gerado.
-testemap.html: Arquivo HTML para exibir o mapa dos hotéis.
-teste.html: Arquivo HTML para exibir a localização das hospedagens.
-grafico_imoveis_baratos.png, grafico_numero_reviews.png: Imagens dos gráficos gerados.
+
+- executa.bat: Arquivo de script para executar o aplicativo facilmente no Windows.
+- template.png: Template para o PDF gerado.
+- testemap.html: Arquivo HTML para exibir o mapa dos hotéis.
+- teste.html: Arquivo HTML para exibir a localização das hospedagens.
+- grafico_imoveis_baratos.png, grafico_numero_reviews.png: Imagens dos gráficos gerados.
+
 🎨 Desenvolvimento
+
 Desenvolvido por Fabiano de Navarro.
 
-📫 Portfólio e Contato
-💻 GitHub
-🔗 LinkedIn
+📫 Portfólio https://www.dio.me/users/nav_info_suporte    
+
+🔗 LinkedIn https://www.linkedin.com/in/fabiano-de-navarro
+
 
 🔧 Problemas e Contribuições
+
 Se você encontrar problemas ou quiser contribuir para o projeto, por favor, abra uma issue ou envie um pull request.
