@@ -1,3 +1,3 @@
 @echo off
 
-streamlit run analise_dados_hospedagem_ny.py
+streamlit run dados_hospedagem_BIG_Apple.py
